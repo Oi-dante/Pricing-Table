@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --yellow: #ffcc29;
+  --blue: #1d539e;
+  --gray: #828799;
+  --bg-clr: #f9fbfc;
+  }
+
+  body{
+    width: 100%;
+    min-height: 100vh;
+  background: linear-gradient(
+    to top,
+    var(--bg-clr) 0%, 
+    var(--bg-clr) 50%, 
+    var(--blue) 50%, 
+    var(--blue) 100% 
+  );
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  color:var(--gray)
+  }
+
+  main{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  }
+
+
+  /* TITULO */
+  header{
+    display: flex;
+    justify-content: center;
+    color: var(--bg-clr);
+    margin: 100px 0;
+  }
+  header h1 span{
+    font-weight: 400;
+    font-size: 18px;  
+    line-height: 25px;
+  }
+  h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+  }
+  
+
+/* FREE, BÁSICO, POPULAR */
+ .first, .thrid{
+  background-color: var(--bg-clr);
+  width: 355px;
+  height: 300px;
+  padding: 30px;
+  border-radius: 8px;  
+  margin-top: 20px;
+}
+ .second{
+  background-color: var(--bg-clr);
+  width: 355px;
+  height: 300px;
+  border-radius: 8px  
+}
+.first ul{
+  margin-bottom: 120px;
+}
+.second ul{
+  margin-bottom: 74px;
+}
+.thrid ul{
+  margin-bottom: 40px;
+}
+
+
+
+/* SECOND CARD*/
+.card-header, .card-section{
+  padding: 5px 30px;
+}
+.card-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--yellow);
+}
+.card-tag{
+  padding: 5px;
+  border-radius: 20px;
+  background-color: var(--blue);
+  width: 100px;
+  text-align: center;
+  color: white;
+}
+
+
+/* PREÇO E TITULOS DOS CARD */
+div h2, .price {
+  color: #1E2338;
+}
+div .price{
+  font-weight: 700;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+.price span{
+  font-size: 18px;
+}
+.price span .s2{
+  font-weight: 100;
+  color: var(--gray);
+}
+h2{
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+
+/* LISTA E PARAGRAFOS */
+p{
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  margin-top: 5px;
+}
+li i{
+  margin-bottom: 20px;
+  color: #59CE9F;
+}
+
+
+/* BUTTONS*/
+div button{
+  width: 100%;
+  border-color: var(--blue);
+  border-radius: 8px;
+  padding: 12px 24px;
+  background-color: white;
+  font-size: 20px;
+  color: var(--blue);
+  cursor: pointer;
+}
+div button:hover{
+  background-color: var(--blue);
+  color: white;
+}
+.b-blue{
+  background-color: var(--blue);
+  color: white;
+}
+.b-blue:hover{
+  background-color: #266bcc;
+}
